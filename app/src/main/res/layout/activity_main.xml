@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="9dp"
+        android:onClick="onCBBuscarImagen"
+        android:text="Buscar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="228dp"
+        android:layout_height="335dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/disponible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="-2dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnProcesarTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="6dp"
+        android:onClick="onCBProcesarTextDetection"
+        android:text="TEXT DETECTION" />
+
+    <Button
+        android:id="@+id/btnProcesarImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="7dp"
+        android:onClick="onCBProcesarFaceDetection"
+        android:text="FACE DETECTION" />
+
+    <Button
+        android:id="@+id/btnProcesarObjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="onCBProcesarLabelDetection"
+        android:text="LABEL DETECTION" />
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:onClick="onCBOpenCamera"
+        android:text="Camara" />
+
+</RelativeLayout>
